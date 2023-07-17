@@ -1,0 +1,15 @@
+#Problem -3
+
+a = int(input("Enter the value of a: "))
+series = []
+num = 1
+
+if a % 2 == 0:
+    a -= 1
+
+while len(series) < a:
+    series.append(num)
+    num += 2
+
+series=",".join(map(str,series))
+print(series)
